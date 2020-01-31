@@ -30,7 +30,7 @@ describe('Submit credentials', function() {
     
     it('should click submit to go to the dashboard', function() {
         cy.get('[id=btn]').click()
-        .wait(1000)
+          .wait(1000)
     })
 })
 
