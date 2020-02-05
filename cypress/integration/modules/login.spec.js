@@ -34,13 +34,20 @@ describe('Submit credentials', function() {
     })
 })
 
-// Add logout function here
 
-// describe('function name', function() {
-    
-//     it('function description', function() {
-        
-    
-//     })
-// })  
+describe('Log out', function() {
 
+    it('admin should be logged out of the system and redirected to the landing page', function() {
+  
+      cy.get('.dropdown-toggle').click()
+      {
+        force:true
+      }
+      cy.contains('Logout').click()
+      cy.wait(800)
+      cy.get('.modal')
+      .contains('Logout')
+      .click()
+      
+      })
+  })
